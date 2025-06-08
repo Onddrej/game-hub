@@ -41,7 +41,7 @@ function App() {
       <GridItem area="main">
         <Box paddingLeft={2}>
           <GameHeading gameQuery={gameQuery}></GameHeading>
-          <Flex marginBottom={5}>
+          <Flex marginBottom={5} gap={2}>
             <Box marginBottom={5}>
               <PlatformSelector onSelectPlatform={(platform) => setGameQuery({...gameQuery, platform})} selectedPlatform={gameQuery.platform}/>
             </Box>
